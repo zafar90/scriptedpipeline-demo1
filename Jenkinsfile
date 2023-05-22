@@ -4,7 +4,7 @@ pipeline {
         string(name: 'NAME', description: 'Please tell me your name?')
         string(name: 'Address', description: 'Enter your address, for the pipeline trigger')
         text(name: 'DESCRIPTION', description: 'Describe about the job details')
-        choice(name: 'BRANCH', choices: ['Dev, 'UAT','prod'], description: 'Choose one environment')
+        choice(name: 'BRANCH', choices: ['Dev','UAT','prod'], description: 'Choose one environment')
         
     }
     stages {

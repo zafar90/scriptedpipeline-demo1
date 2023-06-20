@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'slave'}
     parameters {
         string(name: 'NAME', description: 'Please tell me your name?')
         string(name: 'Address', description: 'Enter your address, for the pipeline trigger')
